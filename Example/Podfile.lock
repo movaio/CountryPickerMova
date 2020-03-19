@@ -1,0 +1,16 @@
+PODS:
+  - CountryPickerMova (0.1.0)
+
+DEPENDENCIES:
+  - CountryPickerMova (from `../`)
+
+EXTERNAL SOURCES:
+  CountryPickerMova:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CountryPickerMova: 65245b1eb354e8f3ae09a33dc4f8c8cc83dd2719
+
+PODFILE CHECKSUM: e087d178704ef1036f183caff2555bdb40e7a5a3
+
+COCOAPODS: 1.8.4

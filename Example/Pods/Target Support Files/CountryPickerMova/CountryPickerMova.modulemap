@@ -1,0 +1,6 @@
+framework module CountryPickerMova {
+  umbrella header "CountryPickerMova-umbrella.h"
+
+  export *
+  module * { export * }
+}
