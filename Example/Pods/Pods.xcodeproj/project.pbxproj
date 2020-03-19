@@ -129,6 +129,18 @@
 			path = "Example/Pods/Target Support Files/CountryPickerMova";
 			sourceTree = "<group>";
 		};
+		B1E7783E2423CCF100738942 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B1E778342423C38700738942 /* CountryCallingCodes.swift */,
+				B1E778362423C38700738942 /* CountryPicker.swift */,
+				B1E778372423C38700738942 /* CountryView.swift */,
+				B1E778322423C38700738942 /* CountryView.xib */,
+				B1E778332423C38700738942 /* CountryViewTheme.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,11 +188,7 @@
 		ECCB080B97A72B2F4385D9C14BC318AF /* CountryPickerMova */ = {
 			isa = PBXGroup;
 			children = (
-				B1E778342423C38700738942 /* CountryCallingCodes.swift */,
-				B1E778362423C38700738942 /* CountryPicker.swift */,
-				B1E778372423C38700738942 /* CountryView.swift */,
-				B1E778322423C38700738942 /* CountryView.xib */,
-				B1E778332423C38700738942 /* CountryViewTheme.swift */,
+				B1E7783E2423CCF100738942 /* Classes */,
 				45513B839B0DE81D8076419FF1E5A79A /* Pod */,
 				AE79FC8AEFF126B95DFAD0E5D1ABA2A1 /* Support Files */,
 			);
