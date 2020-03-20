@@ -1,15 +1,23 @@
 # CountryPickerMova
 
-[![CI Status](https://img.shields.io/travis/valic/CountryPickerMova.svg?style=flat)](https://travis-ci.org/valic/CountryPickerMova)
-[![Version](https://img.shields.io/cocoapods/v/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
-[![License](https://img.shields.io/cocoapods/l/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
-[![Platform](https://img.shields.io/cocoapods/p/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
-
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```ruby
+    let countryPicker = CountryPicker()
+    countryPicker.setCountry("en_US")
+    countryPicker.backgroundColor = .white
+    let theme = CountryViewTheme(countryCodeTextColor: Asset.slateGrey.color,
+                                 countryNameTextColor: Asset.slateGrey.color,
+                                 rowBackgroundColor: .white,
+                                 showFlagsBorder: false)
+    countryPicker.theme = theme
+    countryPicker.showPhoneNumbers = false
+    countryPicker.countryPickerDelegate = self
+    
+    textField.inputView = countryPicker
+    textField.tintColor = .clear
+```
 
-## Requirements
 
 ## Installation
 
