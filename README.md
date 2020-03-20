@@ -1,4 +1,8 @@
 # CountryPickerMova
+[![CI Status](https://img.shields.io/travis/valic/CountryPickerMova.svg?style=flat)](https://travis-ci.org/valic/CountryPickerMova)
+[![Version](https://img.shields.io/cocoapods/v/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
+[![License](https://img.shields.io/cocoapods/l/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
+[![Platform](https://img.shields.io/cocoapods/p/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
 
 ## Example
 
