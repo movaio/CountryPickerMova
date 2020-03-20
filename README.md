@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
 [![Platform](https://img.shields.io/cocoapods/p/CountryPickerMova.svg?style=flat)](https://cocoapods.org/pods/CountryPickerMova)
 
+![Demo](https://github.com/valic/CountryPickerMova/blob/master/CountryPickerMova.PNG)
+
 ## Example
 
 ```ruby
