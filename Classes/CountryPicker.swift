@@ -70,6 +70,7 @@ public class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     }
     @objc public weak var countryPickerDelegate: CountryPickerDelegate?
     @objc public var showPhoneNumbers: Bool = false
+    @objc static public var locale: Locale? = Locale(identifier: "en_US")
     open var theme: CountryViewTheme?
     
     init() {
@@ -147,7 +148,13 @@ public class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewData
     /// - Returns: sorted array with all information phone, flag, name
     private static func countryNamesByCode() -> [Country] {
         let countries = NSLocale.isoCountryCodes.map({ (countryCode) -> Country in
-            let name = Locale(identifier: "en_US").localizedString(forRegionCode: countryCode.uppercased())!
+            let name: String
+            if let locale = locale {
+                name = locale.localizedString(forRegionCode: countryCode.uppercased())!
+            } else {
+                name = Locale.current.localizedString(forRegionCode: countryCode.uppercased())!
+            }
+            
             let phoneCode = CountryCallingCodes.phonceCode(countryCode: countryCode)
             let flagName = flag(from: countryCode)
             return Country(code: countryCode, name: name, phoneCode: phoneCode, flagName: flagName)
